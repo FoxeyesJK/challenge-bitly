@@ -55,7 +55,7 @@
 
 **Architecture**
 
-<img width="428" alt="Screen Shot 2021-03-08 at 2 42 23 PM" src="https://user-images.githubusercontent.com/25089799/110372894-db342780-801c-11eb-8384-2813ad7659de.png">
+<img width="100%" alt="Screen Shot 2021-03-08 at 2 42 23 PM" src="https://user-images.githubusercontent.com/25089799/110372894-db342780-801c-11eb-8384-2813ad7659de.png">
 
 
 **Setup Instructions**
