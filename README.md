@@ -27,13 +27,13 @@
                 "country": "US",
                 "units": 30,
                 "unit": "day",
-                "total_clicks": 4,      //country total_clicks
-                "average_clicks": 0.13, //country avg_clicks
+                "total_clicks": 4,      
+                "average_clicks": 0.13, 
                 "bitlinks": [
                     {
                         "bitlinkId": "bitly.is/3v5Ra7x",
-                        "total_clicks": 1,      //bitlink total_clicks
-                        "average_clicks": 0.03  //bitlink avg_clicks 
+                        "total_clicks": 1,      
+                        "average_clicks": 0.03  
                     },
                     {
                         "bitlinkId": "bit.ly/2O8bOmQ",
@@ -57,15 +57,18 @@
 
 ![image](https://user-images.githubusercontent.com/25089799/110382600-22c0b080-8029-11eb-982d-6323cf9f7ab8.png)
 
+**Packages**
+* Used only built-in packages 
 
 **Setup Instructions**
-* Cloning git repository
-	* Clone URL: https://github.com/FoxeyesJK/challenge-bitly.git
-	* Install .Net Core 3.1 SDK - https://dotnet.microsoft.com/download/dotnet/3.1
-    * Add Access Token in appsettings.json
-    * Open terminal
-    * Run Dotnet App using command "dotnet run"
-    * Request GET /countries - /coutnries?unit={unit}&units={units}
+* Clone URL: https://github.com/FoxeyesJK/challenge-bitly.git
+* Install .Net Core 3.1 SDK - https://dotnet.microsoft.com/download/dotnet/3.1
+* Install C# from the editor if needed - No other packages are needed(Used only built-in packages)
+* Do not need to install any other packages
+* Add Access Token in appsettings.json
+* Open terminal
+* Run Dotnet App using command "dotnet run"
+* Request GET /countries - /coutnries?unit={unit}&units={units}
 
 
 **Possible Implementations**
