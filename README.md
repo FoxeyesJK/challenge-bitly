@@ -5,9 +5,12 @@
 **Problem**
 * Expose an endpoint to provide the average number of daily clicks Bitlinks in the user's default group received from each country
 
+
 **Tech Stack**
-* Language: .Net Core 3.1
+* Language: C#
+* Framework: .Net Core 3.1
 * Protocol: RESTAPI 
+
 
 **API EndPoints**
 * /countries - provide the average number of clicks broken down by country
@@ -19,28 +22,29 @@
                 Default(-1)
     * Response
         ```json
-            [
-                {
-                    "country": "US",
-                    "units": 30,
-                    "unit": "day",
-                    "total_clicks": 4,
-                    "average_clicks": 0.13,
-                    "bitlinks": [
-                        {
-                            "bitlinkId": "bitly.is/3v5Ra7x",
-                            "total_clicks": 1,
-                            "average_clicks": 0.03
-                        },
-                        {
-                            "bitlinkId": "bit.ly/2O8bOmQ",
-                            "total_clicks": 3,
-                            "average_clicks": 0.1
-                        }
-                    ]
-                }
-            ]
+        [
+            {
+                "country": "US",
+                "units": 30,
+                "unit": "day",
+                "total_clicks": 4,      //country total_clicks
+                "average_clicks": 0.13, //country avg_clicks
+                "bitlinks": [
+                    {
+                        "bitlinkId": "bitly.is/3v5Ra7x",
+                        "total_clicks": 1,      //bitlink total_clicks
+                        "average_clicks": 0.03  //bitlink avg_clicks 
+                    },
+                    {
+                        "bitlinkId": "bit.ly/2O8bOmQ",
+                        "total_clicks": 3,
+                        "average_clicks": 0.1
+                    }
+                ]
+            }
+        ]
         ```
+
 
 **Bitly API Constraints**
 * /groups/{group_guid}/bitlinks
@@ -48,7 +52,11 @@
 * /bitlinks/{bitlink}/countries
     * size param: max 15000, default 50 - due to default size of the param, request with max size is required to avoid missing data
 
+
 **Architecture**
+
+<img width="428" alt="Screen Shot 2021-03-08 at 2 42 23 PM" src="https://user-images.githubusercontent.com/25089799/110372894-db342780-801c-11eb-8384-2813ad7659de.png">
+
 
 **Setup Instructions**
 * Cloning git repository
@@ -59,8 +67,9 @@
     * Run Dotnet App using command "dotnet run"
     * Request GET /countries - /coutnries?unit={unit}&units={units}
 
-**Possible Implementations**
-* Mode setup for Development & Production
-* Unit Testing along with test cases
 
+**Possible Implementations**
+* Development Mode: setup for Development & Production
+* Unit Testing: along with test cases
+* Error Handling: Handling Different Throw Exceptions and returning appropriate status code
 
