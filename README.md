@@ -11,16 +11,14 @@
 * Framework: .Net Core 3.1
 * Protocol: RESTAPI 
 * Deploy: Heroku using docker - https://challenge-bitly.herokuapp.com/countries
+   * This only show my data. In order to obtain other users' data, you must run the application from the local.
 
 
 **API EndPoints**
 * /countries - provide the average number of clicks broken down by country
     * Query Parameters
-        * unit: A unit of time
-                Default("day")
-                Enum("minute", "hour", "day", "week", "month")
-        * units: An integer representing the time units to query data for. pass -1  to return all units of time.
-                Default(-1)
+        * unit: A unit of time - Default("day"), Enum("minute", "hour", "day", "week", "month")
+        * units: An integer representing the time units to query data for. pass -1  to return all units of time - Default(-1)
     * Response
         ```json
         [
@@ -73,8 +71,9 @@
 
 
 **Possible Implementations**
-* Development Mode: setup for Development & Production
-* Unit Testing: along with test cases
+* Other Users' Data using different Access Token: Currently deployed website generates my data.
+* Development Mode: Setup for Development & Production
+* Unit Testing: Along with test cases
 * Error Handling: Handling Different Throw Exceptions and returning appropriate status code
 
 **References**
