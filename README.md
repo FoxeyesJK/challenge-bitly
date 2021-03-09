@@ -10,6 +10,7 @@
 * Language: C#
 * Framework: .Net Core 3.1
 * Protocol: RESTAPI 
+* Deploy: Heroku using docker - https://challenge-bitly.herokuapp.com/countries
 
 
 **API EndPoints**
@@ -76,3 +77,5 @@
 * Unit Testing: along with test cases
 * Error Handling: Handling Different Throw Exceptions and returning appropriate status code
 
+**References**
+* https://dev.to/alrobilliard/deploying-net-core-to-heroku-1lfe

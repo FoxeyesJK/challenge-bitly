@@ -1,0 +1,6 @@
+/Users/jeawonkwon/Documents/git/challenge-bitly/bin/Release/netcoreapp3.1/publish/appsettings.Development.json
+/Users/jeawonkwon/Documents/git/challenge-bitly/bin/Release/netcoreapp3.1/publish/appsettings.json
+/Users/jeawonkwon/Documents/git/challenge-bitly/bin/Release/netcoreapp3.1/publish/challenge-bitly.dll
+/Users/jeawonkwon/Documents/git/challenge-bitly/bin/Release/netcoreapp3.1/publish/challenge-bitly.deps.json
+/Users/jeawonkwon/Documents/git/challenge-bitly/bin/Release/netcoreapp3.1/publish/challenge-bitly.runtimeconfig.json
+/Users/jeawonkwon/Documents/git/challenge-bitly/bin/Release/netcoreapp3.1/publish/challenge-bitly.pdb
